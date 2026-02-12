@@ -23,7 +23,7 @@
          'theme_location' => 'primary',
          'container'      => false,
          'fallback_cb'    => false,
-         'items_wrap'     => '%3$s', // niente <ul>, usiamo direttamente i <a> (lo stile li prende lo stesso)
+         'items_wrap'     => '%3$s',
        ) );
        ?>
     </nav>
