@@ -12,7 +12,7 @@ function baurpub_setup() {
 function bauerpub_assets() {
        wp_enqueue_style(
        'bauerpub-style',
-       get_stylesheet_uri(), // style.css
+       get_stylesheet_uri(),
        array(),
        '1.0'
    );
