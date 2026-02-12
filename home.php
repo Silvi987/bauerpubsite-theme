@@ -19,6 +19,6 @@
 
     <hr class="sep" />
 
-  </main>
+</main>
 
 <?php get_footer(); ?>
