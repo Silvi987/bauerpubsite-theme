@@ -6,7 +6,7 @@
   <title>Bauer Pub — Home</title>
   <meta name="description" content="Bauer Pub: birre artigianali, cucina e serate live." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
