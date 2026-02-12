@@ -6,7 +6,7 @@
   <title>Contattaci — Bauer Pub</title>
   <meta name="description" content="Contatti, mappa e come prenotare." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>

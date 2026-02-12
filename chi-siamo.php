@@ -6,7 +6,7 @@
   <title>Chi siamo — Bauer Pub</title>
   <meta name="description" content="La storia e l'idea del Bauer Pub." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
