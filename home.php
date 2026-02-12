@@ -6,7 +6,6 @@
 
 <?php if (have_posts()): ?>
         <ul class="post-list">
-
           <?php 
           while ( have_posts() ) : the_post(); 
             get_template_part('partials/post');
