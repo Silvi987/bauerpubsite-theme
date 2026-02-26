@@ -92,7 +92,7 @@
           Via del Luppolo 12, Roma (zona centrale). A due passi dalla metro. Parcheggi nelle vie limitrofe.
         </p>
         <div style="margin-top:12px">
-          <a class="button" href="contattaci.html">Contatti & mappa →</a>
+          <a class="button" href="page-contattaci.php">Contatti & mappa →</a>
         </div>
       </div>
     </div>
