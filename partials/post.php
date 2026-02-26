@@ -1,4 +1,4 @@
-<a class="card" href="evento-karaoke-friday.html" aria-label="Apri evento: Karaoke Friday">
+<a class="card" href="<?php the_permalink(); ?>" aria-label="<?php the_title(); ?>">
   <div class="top">
     <div>
       <h3><?php the_title(); ?></h3>
@@ -6,6 +6,6 @@
     </div>
     <div class="datepill"><?php the_date(); ?></div>
   </div>
-  <hr class="sep" />
+  <hr class="sep">
   <span class="button">Dettagli evento →</span>
 </a>

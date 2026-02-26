@@ -1,32 +1,4 @@
-<!doctype html>
-<html lang="it">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Burger & Beer Pairing — Bauer Pub</title>
-  <meta name="description" content="Dettaglio evento: Burger & Beer Pairing al Bauer Pub." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <span class="logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24" role="img" aria-label="Logo Bauer Pub">
-          <path d="M7 3h10a2 2 0 0 1 2 2v4a2 2 0 0 1-1 1.73V18a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V10.73A2 2 0 0 1 5 9V5a2 2 0 0 1 2-2Zm1.5 4V9h7V7h-7ZM9 11v7a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-7H9Z"/>
-        </svg>
-      </span>
-      <span>Bauer Pub</span>
-    </a>
-
-    <nav class="navlinks" aria-label="Menu principale">
-      <a href="index.html">Home</a>
-      <a href="chi-siamo.html">Chi siamo</a>
-      <a href="contattaci.html">Contattaci</a>
-    </nav>
-  </div>
-</header>
+<?php get_header(); ?>
 
   <main class="container">
     <div class="breadcrumb">
@@ -34,13 +6,13 @@
     </div>
 
     <div class="event-hero">
-      <div class="badge">📅 Venerdì 6 febbraio 2026</div>
-      <h2 style="margin-top:10px">Burger & Beer Pairing</h2>
-      <p style="margin:10px 0 0; color:rgba(233,238,245,.88)">Degustazione guidata: 3 mini-burger + 3 birre abbinate. Un percorso semplice e gustoso per scoprire come cambiano aromi e sapori con gli abbinamenti giusti. Posti limitati: consigliata prenotazione.</p>
+      <div class="badge">📅 Giovedì 29 gennaio 2026</div>
+      <h2 style="margin-top:10px">Quiz Night a squadre</h2>
+      <p style="margin:10px 0 0; color:rgba(233,238,245,.88)">Sfida a domande (musica, cinema, cultura pop). Forma la tua squadra, prenota un tavolo e punta al podio: premi per i primi classificati e birra in promo per tutta la serata.</p>
 
       <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
         <a class="button" href="index.html#eventi">← Altri eventi</a>
-        <a class="button" href="contattaci.html">Prenota / Info</a>
+        <a class="button" href="<?php echo get_permalink(get_page_by_path('contattaci')) ?>">Prenota / Info</a>
       </div>
     </div>
 
@@ -93,16 +65,4 @@
     </div>
   </main>
 
-  <footer>
-  <div class="container">
-    <div class="small">
-      <strong>Bauer Pub</strong> — Via del Luppolo 12, 00100 Roma · Tel. +39 06 1234 5678 ·
-      <a href="mailto:info@bauerpub.it">info@bauerpub.it</a>
-    </div>
-    <div class="small muted" style="margin-top:8px">
-      © 2026 Bauer Pub. Tutti i diritti riservati.
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+  <?php get_footer(); ?>
