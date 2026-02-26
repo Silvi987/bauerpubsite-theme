@@ -16,7 +16,6 @@
             in <span class="badge"><?php echo esc_html( $cats[0]->name ); ?></span>
           <?php endif; ?>
         </p>
-        <p>Luogo dell'evento: <?php the_field('luogo_evento'); ?> </p>
         <p>Data dell'evento: <?php the_field('data_evento'); ?> </p>
       </header>
 
