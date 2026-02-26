@@ -1,34 +1,33 @@
-//
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <article class="post-card">
-        <h3 class="post-card-title"><?php the_title(); ?></h3>
+<?php get_header(); ?>
 
-          <?php the_post_thumbnail(); ?>
+  <main class="site-main container">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    
+    
+    <article>
+      
+      <header class="single-post-header">
         
-          <?php the_content(); ?>
-          <br>
-        <p>
-          <a href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ); ?>" class="btn btn-primary">Vai al blog</a>
+        <h1 class="single-post-title"><?php the_title(); ?></h1>
+        <p class="single-post-meta">
+          Pubblicato il <?php the_date(); ?> da <strong><?php the_author(); ?></strong>
+          <?php $cats = get_the_category();
+          if ( $cats ) : ?>
+            in <span class="badge"><?php echo esc_html( $cats[0]->name ); ?></span>
+          <?php endif; ?>
         </p>
-      </article>
-      <?php endwhile; endif; ?>
+        <p>Luogo dell'evento: <?php the_field('luogo_evento'); ?> </p>
+        <p>Data dell'evento: <?php the_field('data_evento'); ?> </p>
+      </header>
 
-      <h3 style="margin: 1.5rem 0 0.75rem;">Ultimi articoli</h3>
+      <div class="single-post-content">
+        <?php the_post_thumbnail('medium_large'); ?>
+        <?php the_content(); ?>
+      </div>
+    </article>
 
-      <?php
-      $query = new WP_Query( ['posts_per_page' => 3 ] );
-      ?>
+    <?php endwhile; endif; ?>
 
-      <?php if ( $query->have_posts() ) : ?>
-        <ul class="post-list">
-          <?php 
-          while ( $query->have_posts() ): $query->the_post(); 
-             get_template_part('partials/post');
-          endwhile; 
-          ?>
-        </ul>
-      <?php else : ?>
-        <p>Nessun articolo pubblicato.</p>
-      <?php endif; ?>
-    </section>
-//
+  </main>
+
+<?php get_footer(); ?>
