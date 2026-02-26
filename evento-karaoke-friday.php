@@ -11,8 +11,8 @@
       <p style="margin:10px 0 0; color:rgba(233,238,245,.88)">Microfono aperto, classici intramontabili e tante risate. Porta gli amici, scegli il tuo pezzo e sali sul palco: al Bauer Pub il venerdì è karaoke time. Serata perfetta per gruppi e compleanni.</p>
 
       <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
-        <a class="button" href="index.html#eventi">← Altri eventi</a>
-        <a class="button" href="contattaci.html">Prenota / Info</a>
+        <a class="button" href="<?php echo get_permalink(get_page_by_path('eventi')) ?>">← Altri eventi</a>
+        <a class="button" href="<?php echo get_permalink(get_page_by_path('contattaci')) ?>">Prenota / Info</a>
       </div>
     </div>
 

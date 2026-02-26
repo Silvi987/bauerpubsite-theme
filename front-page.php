@@ -10,7 +10,7 @@
         </p>
         <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
           <a class="button" href="#eventi">Vedi eventi ↓</a>
-          <a class="button" href="contattaci.html">Prenota un tavolo</a>
+          <a class="button" href="<?php echo get_permalink(get_page_by_path('contattaci')) ?>">Prenota un tavolo</a>
         </div>
       </div>
 
@@ -30,7 +30,7 @@
     <p class="muted" style="margin:0 0 14px">Clicca su un evento per vedere i dettagli (titolo, descrizione e data).</p>
 
     <div class="grid" aria-label="Elenco eventi">
-      <a class="card" href="evento-karaoke-friday.html" aria-label="Apri evento: Karaoke Friday">
+      <a class="card" href="<?php echo get_permalink(get_page_by_path('eventi'))?>" aria-label="Apri evento: Karaoke Friday">
   <div class="top">
     <div>
       <h3>Karaoke Friday</h3>
@@ -92,7 +92,7 @@
           Via del Luppolo 12, Roma (zona centrale). A due passi dalla metro. Parcheggi nelle vie limitrofe.
         </p>
         <div style="margin-top:12px">
-          <a class="button" href="page-contattaci.php">Contatti & mappa →</a>
+          <a class="button" href="<?php echo get_permalink(get_page_by_path('contattaci')) ?>">Contatti & mappa →</a>
         </div>
       </div>
     </div>
