@@ -10,13 +10,12 @@
         
         <h1 class="single-post-title"><?php the_title(); ?></h1>
         <p class="single-post-meta">
-          Pubblicato il <?php the_date(); ?> da <strong><?php the_author(); ?></strong>
-          <?php $cats = get_the_category();
+          <?php $cats = get_the_category('eventi');
           if ( $cats ) : ?>
             in <span class="badge"><?php echo esc_html( $cats[0]->name ); ?></span>
           <?php endif; ?>
         </p>
-        <p>Data dell'evento: <?php the_field('data_evento'); ?> </p>
+        
       </header>
 
       <div class="single-post-content">
