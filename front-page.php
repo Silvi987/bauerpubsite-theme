@@ -30,7 +30,7 @@
     <p class="muted" style="margin:0 0 14px">Clicca su un evento per vedere i dettagli (titolo, descrizione e data).</p>
 
     <div class="grid" aria-label="Elenco eventi">
-      <a class="card" href="<?php echo get_permalink(get_page_by_path('eventi'))?>" aria-label="Apri evento: Karaoke Friday">
+      <a class="card" href="<?php echo get_permalink('evento-karaoke-friday')?>" aria-label="Apri evento: Karaoke Friday">
   <div class="top">
     <div>
       <h3>Karaoke Friday</h3>
